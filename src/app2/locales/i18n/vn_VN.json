@@ -1,0 +1,56 @@
+{ 
+  "newsfeed": {
+    "actions": {
+      "close": "close",
+      "text": "text",
+      "text_box": {
+        "write_status": "write your status",
+        "post": "post"
+      },
+      "check_in_box": {
+        "search_location": "search locations",
+        "name": "name",
+        "type": "type",
+        "checkin": "check-in"
+      },
+      "filter_box": {
+        "filter": "filter",
+        "post": "post"
+      },
+      "photo": "photo",
+      "checkin": "check-in",
+      "video": "video",
+      "filter": "filter"
+    },
+    "news": {
+      "comments": "comment(s)"
+    }
+  },
+  "nav": { 
+    "newsfeed": "bảng tin",
+    "nearme": "gần đây",
+    "popular": "phổ biến",
+    "suggestion": "gợi ý",
+    "login": "đăng nhập",
+    "signup": "đăng ký",
+    "dropdown": {
+      "account": "account",
+      "support": "support",
+      "information": "information",
+      "checkin": "check-in",
+      "favorites": "favorites",
+      "settings": "settings",
+      "logout": "logout"
+    }
+  },
+  "map": {
+    "try_to_find": "we are trying to find where you are!",
+    "details": {
+      "set_location": "set location",
+      "save": "save",
+      "send_phone": "send to phone",
+      "share": "share",
+      "more_details": "more details"
+    }
+  }
+}
