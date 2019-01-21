@@ -1,7 +1,7 @@
 <template>
-    <div class="dashboard">
-      <service-content/>
-    </div>
+  <div class="dashboard">
+    <service-content/>
+  </div>
 </template>
 <script>
 export default {

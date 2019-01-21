@@ -1,7 +1,7 @@
 'use strict'
 module.exports = {
   NODE_ENV: '"production"',
-  SERVER_IP: '"http://178.128.126.186:9999"',
+  SERVER_IP: '"http://api.unidev.vn"',
   APP_ID: '"884618848377974"',
   AGENCY_ID: '',
   VERSION: '"v2.11"',

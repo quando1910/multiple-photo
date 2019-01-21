@@ -1,0 +1,22 @@
+{
+  "nav": { 
+    "album": "Album ảnh",
+    "video": "Video",
+    "article": "Bài viết",
+    "list": "Danh sách & Tìm kiếm",
+    "createAlbum": "Tạo album",
+    "createVideo": "Tạo video",
+    "createArticle": "Tạo bài viết",
+    "statistic": "Thống kê"
+  },
+  "album": {
+    "title": "Trình quản lý Albums",
+    "form": {
+      "name": "Tên album",
+      "type": "Loại album",
+      "typePlaceholder": "Chọn loại album bạn muốn",
+      "desc": "Miêu tả",
+      "location":"Địa điểm"
+    }
+  }
+}
