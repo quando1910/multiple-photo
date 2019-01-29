@@ -48,7 +48,7 @@ Vue.use(GlobalComponents)
 Vue.use(VueProgressiveImage)
 
 Vue.http.options.root = process.env.SERVER_IP
-// Vue.prototype.agencyId = '5bdfb3753daf8b0069e9be0f' /* develop */
+// Vue.prototype.agencyId = '5c1f17433516b702f3a24da6' /* develop */
 Vue.prototype.agencyId = '5c3b6cbe42b1cd0695cec218' /* production */
 // set header for all request
 Vue.http.headers.common['Access-Token'] = localStorage.getItem('ACCESS_TOKEN')

@@ -5,9 +5,9 @@
         <div class="row">
           <div class="col-md-4 col-sm-6 xs-padding">
             <div class="footer-widget">
-              <h2 class="text-white">Stela.</h2>
+              <h2 class="text-white">Nova Production</h2>
               <div class="sep"></div>
-              <p class="mb-0">Stela will help you to make any website like creative startups, professional photographer, portfolio agency or other business very easily as it has been coded in Bootstrap and CSS3.</p>
+              <p class="mb-0">SẢN XUẤT PHIM DOANH NGHIỆP UY TÍN - CHUYÊN NGHIỆP - KINH NGHIỆM </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 xs-padding">
@@ -28,9 +28,9 @@
           </div>
           <div class="col-md-4 col-sm-6 xs-padding">
             <div class="footer-widget">
-              <h2 class="text-white">About me.</h2>
+              <h2 class="text-white">Flycam 4K</h2>
               <div class="sep"></div>
-              <p class="mb-0">I believe that every client Business more management is a holistic management approach focused on aligning all aspects organization with the wants and needs of clients.</p>
+              <iframe width="300" height="200" src="https://www.youtube.com/embed/ygqR5qMXN7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
     </section><!-- /.footer-widget-section -->
     <footer class="copyright-text text-center">
       <div class="container">
-        <p>© 2018 Nova Production</p>
+        <p>© 2019 Nova Production</p>
       </div>
     </footer><!-- /.copyright-text -->
   </div>

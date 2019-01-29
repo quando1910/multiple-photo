@@ -27,14 +27,14 @@
             </li>
             <li><router-link :to="{name:'Event'}">Event<span class="slicknav_arrow">▼</span></router-link>
               <ul>
-                <li><router-link :to="{name: 'WeddingLocation'}">Event Services</router-link></li>
+                <li><router-link :to="{name: 'Event'}">Event Services</router-link></li>
                 <li><router-link :to="{name: 'EventAlbums'}">Event Album</router-link></li>
-                <li><router-link :to="{name: 'ArticlesPost'}">Event Posts</router-link></li>
+                <li><router-link :to="{name: 'BehindScenes'}">Behind the Scenes</router-link></li>
               </ul>
             </li>
             <li><router-link :to="{name:'Event'}">TVC<span class="slicknav_arrow">▼</span></router-link>
               <ul>
-                <li><router-link :to="{name: 'WeddingLocation'}">TVC Services</router-link></li>
+                <li><router-link :to="{name: 'TVC'}">TVC Services</router-link></li>
                 <li><router-link :to="{name: 'WeddingAlbums'}">Products</router-link></li>
               </ul>
             </li>

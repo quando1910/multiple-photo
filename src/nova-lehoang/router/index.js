@@ -4,7 +4,8 @@ import Router from 'vue-router'
 import Home from '../components/ComponentMain/home.vue'
 import Wedding from '../components/ComponentMain/wedding.vue'
 import Event from '../components/ComponentMain/event.vue'
-import Service from '../components/ComponentMain/service.vue'
+import TVC from '../components/ComponentMain/tvc.vue'
+import BehindScenes from '../components/ComponentMain/behind-scenes.vue'
 import About from '../components/ComponentMain/about.vue'
 import ArticleDetail from '../components/ComponentMain/article-detail.vue'
 import AlbumsDetail from '../components/ComponentMain/albums-detail.vue'
@@ -53,6 +54,11 @@ const router = new Router({
       name: 'AlbumsDetail'
     },
     {
+      path: '/behind-scenes',
+      component: BehindScenes,
+      name: 'BehindScenes'
+    },
+    {
       path: '/albums/:id',
       component: AlbumsDetail,
       name: 'AlbumsDetail'
@@ -63,9 +69,9 @@ const router = new Router({
       name: 'Event'
     },
     {
-      path: '/service',
-      component: Service,
-      name: 'Service'
+      path: '/tvc',
+      component: TVC,
+      name: 'TVC'
     },
     {
       path: '/articles/:id',

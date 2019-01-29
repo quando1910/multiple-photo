@@ -43,7 +43,7 @@
               </li>
             </ul>
             <div class="load-more-btn text-center mt-30">
-                <a href="http://wowthemez.com/templates/stela/index.html#" class="default-btn">Load More Projects</a>
+              <a @click="directToAlbum" class="default-btn">Load More Projects</a>
             </div>
         </div>
     </section><!-- /Portfolio Section -->
@@ -75,7 +75,6 @@ export default {
     const payload = {agencyId: this.agencyId, type : 1}
     this.$http.get('public/pictures').then(res => {
       this.pictures = res.body
-      console.log(this.pictures)
       this.pictureFilter = this.pictures
       this.result = true
     })
@@ -92,6 +91,20 @@ export default {
         this.pictureFilter = this.pictures
       }
       this.$nextTick(() => this.$redrawVueMasonry());
+    },
+    directToAlbum () {
+      if (this.current == 1 || this.current == 0 ) {
+        this.$router.push('/prewedding/albums')
+      }
+      if (this.current == 2 ) {
+        this.$router.push('/journal/albums')
+      }
+      if (this.current == 3 ) {
+        this.$router.push('/event/albums')
+      }
+      if (this.current == 4 ) {
+        this.$router.push('/event/albums')
+      }
     }
   }
 }

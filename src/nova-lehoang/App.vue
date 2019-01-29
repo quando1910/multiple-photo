@@ -4,7 +4,7 @@
       <div class="spinner"></div>
     </div><!-- Preloader -->
     <header-nav/>
-    <router-view/>
+    <router-view :key="$route.path"/>
     <footer-nav></footer-nav>
     <a data-scroll="" href="http://wowthemez.com/templates/stela/index.html#header" id="scroll-to-top"><i class="arrow_up"></i></a>
   </div>
