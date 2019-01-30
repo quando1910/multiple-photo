@@ -48,6 +48,7 @@ export default {
     }
     this.$http.get(`public/articles?type=${this.type}`).then(res => {
       this.articles = res.body
+      console.log(this.articles)
     })
   },
 }

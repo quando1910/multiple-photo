@@ -5,7 +5,7 @@
       <span class="time">{{article.created_at}}</span><br>
     </div>
 		<div class="news-control">
-      <div id="myDiv"/>
+      <div id="myDiv" class="ql-editor"/>
     </div>
   </div>
 </template>
@@ -37,3 +37,14 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+@import '../../assets/css/quill.core.css';
+@import '../../assets/css/quill.snow.css';
+@import '../../assets/css/quill.bubble.css';
+.ql-editor {
+  padding: 20px 40px;
+  p {
+    padding-bottom: 20px;
+  }
+}
+</style> 
