@@ -1,78 +1,1018 @@
 <template>
   <div>
-    <el-carousel height="620px">
-      <el-carousel-item v-for="item in 4" :key="item">
-        <img src="../../assets/img/slide1.jpg" class="cover-img">
-      </el-carousel-item>
-    </el-carousel>
-    <div id="message">
-			<p>Những danh mục, bài viết quan trọng nhất</p>
+    <div class="wrapper gray-bg">
+        <header class="header-area header-wrapper">
+			<!-- Header Top Area Start -->
+			<div class="header-top-area">
+			   <div class="container">
+					<div class="row">
+						<!-- Header Top Left Start -->
+						<div class="col-md-6 col-sm-7 col-xs-12">
+							<div class="header-left ptb-15">
+								<ul>
+									<li><span><i class="zmdi zmdi-phone"></i></span><a href="#">(+880) 01725911643</a></li>
+									<li><span><i class="zmdi zmdi-email"></i></span><a href="#">breed@gmail.com</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Header Top Left End -->
+						<!-- Header Top Right Start -->
+						<div class="col-md-6 col-sm-5 col-xs-12">
+							<div class="header-right social-icon pull-right">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li class="search-active">
+									   <a href="#"><i class="zmdi zmdi-search"></i></a>
+										<div class="search-form">
+											<form action="#" method="get">
+												<input name="search" id="search" placeholder="Search" type="text">
+											</form>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Header Top Right End -->
+					</div>
+			   </div>
+			</div>
+			<!-- Header Top Area End -->
+			<!-- Header Menu Area Start -->
+			<div class="main-menu-area broder-top ptb-25" id="sticky-header">
+				<div class="container">
+					<div class="row">
+						<!-- Logo Area -->
+						<div class="col-md-2 col-sm-12 col-xs-12">
+							<div class="logo-area">
+								<a href="index.html"><img src="../../assets/images/logo/1.png" alt="" /></a>
+							</div>
+						</div>
+						<!-- Logo Area -->
+						<!-- Menu Area -->
+						<div class="col-md-10 col-sm-12 hidden-xs">
+							<div class="main-menu">
+								<nav>
+									<ul id="nav">
+										<li class="active"><a href="index.html">Home</a></li>
+										<li><a href="about-us.html">About</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="#">Services</a></li>
+										<li><a href="portfolio.html">Portfolio</a></li>
+										<li><a href="#">Page</a>
+											<ul>
+												<li><a href="about-us.html">About</a></li>
+												<li><a href="blog.html">Blog</a></li>
+												<li><a href="blog-details.html">Blog Details</a></li>
+												<li><a href="portfolio.html">Portfolio</a></li>
+												<li><a href="portfolio-details.html">Portfolio Details</a></li>
+												<li><a href="404.html">404 Error</a></li>
+												<li><a href="contact-us.html">Contact Us</a></li>
+											</ul>
+										</li>
+										<li><a href="contact-us.html">Contact Us</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<!-- Menu Area -->
+					</div>
+				</div>
+				<!-- MOBILE-MENU-AREA START --> 
+				<div class="mobile-menu-area">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12">
+								<div class="mobile-area">
+									<div class="mobile-menu">
+										<nav id="mobile-nav">
+											<ul>
+												<li><a href="index.html">Home </a>
+													<ul>
+														<li><a href="index.html">Home version one</a></li>
+														<li><a href="index-2.html">Home Version two</a></li>
+														<li><a href="index-3.html">Home Version Three</a></li>
+														<li><a href="index-4.html">Home Version Four</a></li>
+														<li><a href="index-5.html">Home Version Five</a></li>
+													</ul>
+												</li>
+												<li><a href="about-us.html"> About Us </a></li>
+												<li><a href="blog.html">Blog</a></li>
+												<li><a href="blog-details.html">Blog Details</a></li>
+												<li><a href="portfolio.html">Portfolio</a></li>
+												<li><a href="portfolio-details.html">Portfolio Details</a></li>
+												<li><a href="404.html">404 Error</a></li>
+												<li><a href="contact-us.html">Contact</a></li>
+											</ul>
+										</nav>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- MOBILE-MENU-AREA END  -->
+			</div>
+			<!-- Header Menu Area End -->
+        </header>
+        <!-- End of header area -->
+        <!-- Start of slider area -->
+        <div class="slider-area">
+			<div id="slider" class="nivoSlider">
+				<img style ="display:none" src="../../assets/images/slider/home-1/1.jpg"  data-thumb="../../assets/images/slider/1.jpg"  alt="" title="#htmlcaption1"/>      
+				<img style ="display:none" src="../../assets/images/slider/home-1/2.jpg"  data-thumb="../../assets/images/slider/2.jpg"  alt="" title="#htmlcaption2"/>
+			</div>
+			<div id="htmlcaption1" class="pos-slideshow-caption nivo-html-caption nivo-caption">
+				<div class="timing-bar"></div>
+				<div class="pos-slideshow-info pos-slideshow-info1">
+					<div class="container">
+						<div class="pos_description hidden-xs">
+							<div class="title1"><span class="txt">we are breed</span></div>
+							<div class="title2"><span class="txt">every <b>solution</b> in</span></div>
+							<div class="title2"><span class="txt">web design</span></div>
+							<div class="pos-slideshow-readmore">
+								<a href="#" title="Explore now">EXPLORE NOW</a>  
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="htmlcaption2" class="pos-slideshow-caption nivo-html-caption nivo-caption">
+				<div class="timing-bar"></div>
+				<div class="pos-slideshow-info pos-slideshow-info2">
+					<div class="container">
+						<div class="pos_description hidden-xs">
+							<div class="title1"><span class="txt">Complete your site with us</span></div>
+							<div class="title2"><span class="txt">We are </span></div>
+							<div class="title2"><span class="txt"><b>creative</b> xoss</span></div>
+							<div class="pos-slideshow-readmore">
+								<a href="#" title="Explore now">EXPLORE NOW</a>   
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-    <div v-if="categoryArticles.length > 0" >
-      <large-box v-for="(item, index) of categoryArticles" :key="index" :articles="item"/>
+        <!-- End of slider area -->
+        <!-- About Area Start -->
+        <section class="about-area pt-100">
+			<div class="container">
+				<!-- Section Titel -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h1>ABOUT CORPLEX</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Section Titel -->
+				<!-- About Content -->
+				<div class="row pt-50">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<!-- Speciality Single -->
+						<div class="specialty-single pb-50">
+							<div class="icon-titel">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+								<h6>Great Support</h6>
+							</div>
+							<div class="spe-discribe">
+								<p>Lorem ipsum dolor sit amet, consectetur ish  dipisicing elit, sed do eiusmod tempor lorem incididunt ut labore et .</p>
+							</div>
+						</div>
+						<!-- Speciality Single -->
+						<!-- Speciality Single -->
+						<div class="specialty-single hidden-xs">
+							<div class="icon-titel">
+								<i class="fa fa-anchor" aria-hidden="true"></i>
+								<h6>pixel perfect</h6>
+							</div>
+							<div class="spe-discribe">
+								<p>Lorem ipsum dolor sit amet, consectetur ish  dipisicing elit, sed do eiusmod tempor lorem incididunt ut labore et .</p>
+							</div>
+						</div>
+						<!-- Speciality Single -->
+					</div>
+					<!-- Speciality Area -->
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<!-- Speciality Single -->
+						<div class="specialty-single pb-50">
+							<div class="icon-titel">
+								<i class="fa fa-diamond" aria-hidden="true"></i>
+								<h6>creative design</h6>
+							</div>
+							<div class="spe-discribe">
+								<p>Lorem ipsum dolor sit amet, consectetur ish  dipisicing elit, sed do eiusmod tempor lorem incididunt ut labore et .</p>
+							</div>
+						</div>
+						<!-- Speciality Single -->
+						<!-- Speciality Single -->
+						<div class="specialty-single hidden-xs">
+							<div class="icon-titel">
+								<i class="fa fa-desktop" aria-hidden="true"></i>
+								<h6>retina ready</h6>
+							</div>
+							<div class="spe-discribe">
+								<p>Lorem ipsum dolor sit amet, consectetur ish  dipisicing elit, sed do eiusmod tempor lorem incididunt ut labore et .</p>
+							</div>
+						</div>
+						<!-- Speciality Single -->
+					</div>
+					<!-- Speciality Area -->
+					<!-- Speciality Image -->
+					<div class="col-md-6 col-sm-12">
+						<div class="specialty-image">
+							<img src="../../assets/images/other/about.png" alt="" />
+						</div>
+					</div>
+					<!-- Speciality Image -->
+				</div>
+				<!-- About Content -->
+				<!-- Video Area Start -->
+				<div class="row pt-100 res-pt-xs-50">
+					<div class="col-md-6 col-sm-6">
+						<div class="video-area">
+							<div class="img">
+								<img src="../../assets/images/other/video-bg.png" alt="" />
+								<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="popup-youtube">
+									<i class="zmdi zmdi-play-circle-outline"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="video-content res-pt-xs-20">
+							<h6>a little bit of corplex story</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+							<p>Pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+						</div>
+						<!-- Social Icon -->
+						<div class="social-rotate pt-30 res-pt-10">
+							<ul>
+								<li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+								<li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+								<li><a href="#"><i class="zmdi zmdi-dribbble"></i></a></li>
+								<li><a href="#"><i class="zmdi zmdi-pinterest"></i></a></li>
+							</ul>
+						</div>
+						<!-- Social Icon -->
+					</div>
+				</div>
+				<!-- Video Area End -->
+			</div>
+        </section>
+        <!-- About Area End -->
+		<!-- Service Area Start -->
+		<section class="service-area ptb-100">
+			<div class="container">
+				<!-- Section Titel -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h1>our services</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Section Titel -->
+				<div class="row pt-60">
+					<!-- Service Single -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="service-single text-center mb-30">
+							<div class="srvc-icon pb-30">
+								<i class="zmdi zmdi-smartphone-android"></i>
+							</div>
+							<div class="srvc-titel">
+								<h6>Mobile App design</h6>
+							</div>
+							<div class="service-hover text-center">
+								<div class="hvr-icon">
+									<i class="fa fa-paint-brush" aria-hidden="true"></i>
+									<h6>graphic design</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicings, eli sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Service Single -->
+					<!-- Service Single -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="service-single text-center mb-30">
+							<div class="srvc-icon pb-30">
+								<i class="zmdi zmdi-camera"></i>
+							</div>
+							<div class="srvc-titel">
+								<h6>Photography</h6>
+							</div>
+							<div class="service-hover text-center">
+								<div class="hvr-icon">
+									<i class="fa fa-paint-brush" aria-hidden="true"></i>
+									<h6>graphic design</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicings, eli sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Service Single -->
+					<!-- Service Single -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="service-single text-center mb-30 res-tab-m0">
+							<div class="srvc-icon pb-30">
+								<i class="zmdi zmdi-book"></i>
+							</div>
+							<div class="srvc-titel">
+								<h6>Branding design</h6>
+							</div>
+							<div class="service-hover text-center">
+								<div class="hvr-icon">
+									<i class="fa fa-paint-brush" aria-hidden="true"></i>
+									<h6>graphic design</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicings, eli sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Service Single -->
+					<!-- Service Single -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="service-single text-center">
+							<div class="srvc-icon pb-30">
+								<i class="zmdi zmdi-desktop-windows"></i>
+							</div>
+							<div class="srvc-titel">
+								<h6>development</h6>
+							</div>
+							<div class="service-hover text-center">
+								<div class="hvr-icon">
+									<i class="fa fa-paint-brush" aria-hidden="true"></i>
+									<h6>graphic design</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicings, eli sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Service Single -->
+					<!-- Service Single -->
+					<div class="col-md-4 hidden-sm hidden-xs">
+						<div class="service-single text-center">
+							<div class="srvc-icon pb-30">
+								<i class="zmdi zmdi-laptop"></i>
+							</div>
+							<div class="srvc-titel">
+								<h6>Web design</h6>
+							</div>
+							<div class="service-hover text-center">
+								<div class="hvr-icon">
+									<i class="fa fa-paint-brush" aria-hidden="true"></i>
+									<h6>graphic design</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicings, eli sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Service Single -->
+					<!-- Service Single -->
+					<div class="col-md-4 hidden-sm hidden-xs">
+						<div class="service-single text-center">
+							<div class="srvc-icon pb-30">
+								<i class="zmdi zmdi-headset-mic"></i>
+							</div>
+							<div class="srvc-titel">
+								<h6>Media Event</h6>
+							</div>
+							<div class="service-hover text-center">
+								<div class="hvr-icon">
+									<i class="fa fa-paint-brush" aria-hidden="true"></i>
+									<h6>graphic design</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicings, eli sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Service Single -->
+				</div>
+			</div>
+		</section>
+		<!-- Service Area End -->
+		<!-- We Work Area Start -->
+		<section class="wework-area bg-1 pt-100 pb-120 overlay">
+			<div class="container">
+				<!-- Section Titel -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center text-white">
+							<h1>how do we work</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Section Titel -->
+				<!-- We Work Titel Area Start -->
+				<div class="row pt-80">
+					<div class="col-md-12">
+						<div class="wework-social uppercase">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+										<span>Plan</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+										<span>Sketch</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-paint-brush" aria-hidden="true"></i>
+										<span>Design</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-laptop" aria-hidden="true"></i>
+										<span>Develop</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Delivary</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- We Work Titel Area End -->
+			</div>
+		</section>
+		<!-- We Work Area End -->
+		<!-- Latest Shot Area Start -->
+		<section class="latestshot-area ptb-100">
+			<div class="container">
+				<!-- Section Titel -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h1>our latest shot</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Section Titel -->
+			</div>
+			<div class="container-fluid">
+				<div class="portfolio-content">
+					<!-- Latest Portfolio Tab Menu -->
+					<ul class="text-center portfolio-menu mt-55 mb-60">
+						<li class="active" data-filter="*">All</li>
+						<li class="filter" data-filter=".c1">Mobile App design</li>
+						<li class="filter" data-filter=".c2">Graphic design</li>
+						<li class="filter" data-filter=".c3">Web design</li>
+						<li class="filter" data-filter=".c4">Branding design</li>
+						<li class="filter" data-filter=".c5">Photography</li>
+					</ul>
+					<!-- Latest Portfolio Tab Menu -->
+					<div class="grid img-full portfolio-box">
+						<!-- Portfolio Single -->
+						<div class="grid-sizer grid-item c1">
+							<div class="single-portfolio">
+								<div class="image-box">
+									<img src="../../assets/images/portfolio/1.jpg" alt="" />
+									<a class="venobox" href="../../assets/images/portfolio/b-1.jpg"><i class="zmdi zmdi-link"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- Portfolio Single -->
+						<!-- Portfolio Single -->
+						<div class="grid-item c2 c4">
+							<div class="single-portfolio">
+								<div class="image-box">
+									<img src="../../assets/images/portfolio/2.jpg" alt="" />
+									<a class="venobox" href="../../assets/images/portfolio/b-2.jpg"><i class="zmdi zmdi-link"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- Portfolio Single -->
+						<!-- Portfolio Single -->
+						<div class="grid-item c1 c3">
+							<div class="single-portfolio">
+								<div class="image-box">
+									<img src="../../assets/images/portfolio/3.jpg" alt="" />
+									<a class="venobox" href="../../assets/images/portfolio/b-3.jpg"><i class="zmdi zmdi-link"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- Portfolio Single -->
+						<!-- Portfolio Single -->
+						<div class="grid-item c3 c1 c5">
+							<div class="single-portfolio">
+								<div class="image-box">
+									<img src="../../assets/images/portfolio/4.jpg" alt="" />
+									<a class="venobox" href="../../assets/images/portfolio/b-4.jpg"><i class="zmdi zmdi-link"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- Portfolio Single -->
+						<!-- Portfolio Single -->
+						<div class="grid-item c4 c5 c3 c1">
+							<div class="single-portfolio">
+								<div class="image-box">
+									<img src="../../assets/images/portfolio/5.jpg" alt="" />
+									<a class="venobox" href="../../assets/images/portfolio/b-5.jpg"><i class="zmdi zmdi-link"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- Portfolio Single -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Latest Shot Area End -->
+		<!-- Our Blog Area Start -->
+		<section class="ourblog-area pb-100">
+			<div class="container">
+				<!-- Section Titel -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h1>our blog</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Section Titel -->
+				<!-- Blog Content Area Start -->
+				<div class="row pt-55">
+					<!-- Single Blog -->
+					<div class="col-md-4 col-sm-6 col-xs-12 res-pb-xs-30">
+						<div class="single-blog">
+							<div class="blog-img">
+								<a href="#">
+									<img src="../../assets/images/blog/1.jpg" alt="" />
+								</a>
+							</div>
+							<div class="blog-content">
+								<h6><a href="#">Lorem Ipsum is simply dummy</a></h6>
+								<div class="post-info">
+									<span class="post-date">
+										<a href="#"><i class="zmdi zmdi-time"></i>Jun 25, 2016 </a>
+									</span>
+									<div class="favorite-comment pull-right">
+										<div class="favorite">
+											<a href="#"><i class="zmdi zmdi-favorite-outline"></i>( 500 )</a>
+										</div>
+										<a href="#"><i class="zmdi zmdi-comments"></i>( 100 )</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Single Blog -->
+					<!-- Single Blog -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single-blog">
+							<div class="blog-img">
+								<a href="#"><img src="../../assets/images/blog/2.jpg" alt="" /></a>
+							</div>
+							<div class="blog-content">
+								<h6><a href="#">Lorem Ipsum is simply dummy</a></h6>
+								<div class="post-info">
+									<span class="post-date">
+										<a href="#"><i class="zmdi zmdi-time"></i>Feb 30, 2015 </a>
+									</span>
+									<div class="favorite-comment pull-right">
+										<div class="favorite">
+											<a href="#"><i class="zmdi zmdi-favorite-outline"></i>( 500 )</a>
+										</div>
+										<a href="#"><i class="zmdi zmdi-comments"></i>( 100 )</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Single Blog -->
+					<!-- Single Blog -->
+					<div class="col-md-4 hidden-sm hidden-xs">
+						<div class="single-blog">
+							<div class="blog-img">
+								<a href="#"><img src="../../assets/images/blog/3.jpg" alt="" /></a>
+							</div>
+							<div class="blog-content">
+								<h6><a href="#">Lorem Ipsum is simply dummy</a></h6>
+								<div class="post-info">
+									<span class="post-date">
+										<a href="#"><i class="zmdi zmdi-time"></i>Aug 19, 2014 </a>
+									</span>
+									<div class="favorite-comment pull-right">
+										<div class="favorite">
+											<a href="#"><i class="zmdi zmdi-favorite-outline"></i>( 500 )</a>
+										</div>
+										<a href="#"><i class="zmdi zmdi-comments"></i>( 100 )</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Single Blog -->
+				</div>
+				<!-- Blog Content Area End -->
+			</div>
+		</section>
+		<!-- Our Blog Area End -->
+		<!-- Client Testimonial Area Start -->
+		<section class="client-testimonial-area ptb-100 bg-2 overlay">
+			<div class="container">
+				<!-- Section Titel -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center text-white">
+							<h1>what say our client</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Section Titel -->
+				<!-- Testimonial Content Area Start -->
+				<div class="client-testimonial-owl pt-55">
+					<!-- Client Testimonial Single -->
+					<div class="client-testimonial-single bg-opacity-1">
+						<div class="ct-cp">
+							<img src="../../assets/images/testimonial/1.jpg" alt="" />
+						</div>
+						<div class="client-say text-white">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in</p>
+							<div class="client-info">
+								<h6>John Doe</h6>
+								<p>Project Manager</p>
+							</div>
+						</div>
+					</div>
+					<!-- Client Testimonial Single -->
+					<!-- Client Testimonial Single -->
+					<div class="client-testimonial-single bg-opacity-1">
+						<div class="ct-cp">
+							<img src="../../assets/images/testimonial/2.jpg" alt="" />
+						</div>
+						<div class="client-say text-white">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in</p>
+							<div class="client-info">
+								<h6>Mark Johan</h6>
+								<p>Head of Chairmen</p>
+							</div>
+						</div>
+					</div>
+					<!-- Client Testimonial Single -->
+					<!-- Client Testimonial Single -->
+					<div class="client-testimonial-single bg-opacity-1">
+						<div class="ct-cp">
+							<img src="../../assets/images/testimonial/1.jpg" alt="" />
+						</div>
+						<div class="client-say text-white">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in</p>
+							<div class="client-info">
+								<h6>Mark Johan</h6>
+								<p>Head of Chairmen</p>
+							</div>
+						</div>
+					</div>
+					<!-- Client Testimonial Single -->
+				</div>
+				<!-- Testimonial Content Area End -->
+			</div>
+		</section>
+		<!-- Client Testimonial Area End -->
+		<!-- Our Pricing Table Start -->
+		<section class="pricing-table ptb-100">
+			<div class="container">
+				<!-- Section Titel -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h1>our pricing table</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Section Titel -->
+				<!-- Pricing Table Area -->
+				<div class="row pt-55">
+					<!-- Pricing table single -->	
+					<div class="col-md-4 col-sm-6 col-xs-12 res-pb-xs-30">
+						<div class="pricing-table-single white-bg">
+							<div class="table-category text-center">
+								<h6>Silver pack</h6>
+								<h1>$30<span> / month</span></h1>
+							</div>
+							<div class="pricing-list text-center">
+								<ul>
+									<li><a href="#">250 MB storage</a></li>
+									<li><a href="#">100 email forwards</a></li>
+									<li><a href="#">200 My sqi datebase</a></li>
+									<li><a href="#">50 social account</a></li>
+									<li><a href="#">24/7 support</a></li>
+								</ul>
+							</div>
+							<div class="order-button text-uppercase text-center">
+								<a href="#">order now</a>
+							</div>
+						</div>
+					</div>
+					<!-- Pricing table single -->
+					<!-- Pricing table single -->	
+					<div class="col-md-4 col-sm-6 col-xs-12 res-pb-xs-30">
+						<div class="pricing-table-single white-bg">
+							<div class="table-category text-center">
+								<h6>gold pack</h6>
+								<h1>$50<span> / month</span></h1>
+							</div>
+							<div class="pricing-list text-center">
+								<ul>
+									<li><a href="#">250 MB storage</a></li>
+									<li><a href="#">100 email forwards</a></li>
+									<li><a href="#">200 My sqi datebase</a></li>
+									<li><a href="#">50 social account</a></li>
+									<li><a href="#">24/7 support</a></li>
+								</ul>
+							</div>
+							<div class="order-button text-uppercase text-center">
+								<a href="#">order now</a>
+							</div>
+						</div>
+					</div>
+					<!-- Pricing table single -->
+					<!-- Pricing table single -->	
+					<div class="col-md-4 hidden-sm hidden-xs">
+						<div class="pricing-table-single white-bg">
+							<div class="table-category text-center">
+								<h6>platinum pack</h6>
+								<h1>$90<span> / month</span></h1>
+							</div>
+							<div class="pricing-list text-center">
+								<ul>
+									<li><a href="#">250 MB storage</a></li>
+									<li><a href="#">100 email forwards</a></li>
+									<li><a href="#">200 My sqi datebase</a></li>
+									<li><a href="#">50 social account</a></li>
+									<li><a href="#">24/7 support</a></li>
+								</ul>
+							</div>
+							<div class="order-button text-uppercase text-center">
+								<a href="#">order now</a>
+							</div>
+						</div>
+					</div>
+					<!-- Pricing table single -->
+				</div>
+				<!-- Pricing Table Area -->
+			</div>
+		</section>
+		<!-- Our Pricing Table End -->
+		<!-- Brand Logo Area Start -->
+		<div class="brandlogo-area pb-100">
+			<div class="container">
+				<div class="row">
+					<div class="brand-carsoul">
+						<!-- Brand Single -->
+						<div class="col-md-12">
+							<div class="brand-single">
+								<a href="#"><img src="../../assets/images/brand/1.jpg" alt="" /></a>
+							</div>
+						</div>
+						<!-- Brand Single -->
+						<!-- Brand Single -->
+						<div class="col-md-12">
+							<div class="brand-single">
+								<a href="#"><img src="../../assets/images/brand/2.jpg" alt="" /></a>
+							</div>
+						</div>
+						<!-- Brand Single -->
+						<!-- Brand Single -->
+						<div class="col-md-12">
+							<div class="brand-single">
+								<a href="#"><img src="../../assets/images/brand/3.jpg" alt="" /></a>
+							</div>
+						</div>
+						<!-- Brand Single -->
+						<!-- Brand Single -->
+						<div class="col-md-12">
+							<div class="brand-single">
+								<a href="#"><img src="../../assets/images/brand/4.jpg" alt="" /></a>
+							</div>
+						</div>
+						<!-- Brand Single -->
+						<!-- Brand Single -->
+						<div class="col-md-12">
+							<div class="brand-single">
+								<a href="#"><img src="../../assets/images/brand/5.jpg" alt="" /></a>
+							</div>
+						</div>
+						<!-- Brand Single -->
+						<!-- Brand Single -->
+						<div class="col-md-12">
+							<div class="brand-single">
+								<a href="#"><img src="../../assets/images/brand/6.jpg" alt="" /></a>
+							</div>
+						</div>
+						<!-- Brand Single -->
+						<!-- Brand Single -->
+						<div class="col-md-12">
+							<div class="brand-single">
+								<a href="#"><img src="../../assets/images/brand/4.jpg" alt="" /></a>
+							</div>
+						</div>
+						<!-- Brand Single -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Brand Logo Area End -->
+		<!-- Google Map Area Start -->
+		<section class="map-area-main">
+			<div class="container-fluid">
+				<div class="map-area">
+					<div id="googleMap" style="width:100%;height:500px;"></div>
+				</div>
+			</div>
+			<div class="help-contact-area pb-100">
+				<div class="container">
+					<div class="row ptb-100 white-bg shadow">
+						<div class="col-md-12">
+							<div class="section-title text-center pb-30">
+								<h1>Need help or any project?</h1>
+							</div>
+						</div>
+						<form id="contact-form" class="form-group" method="POST" action="mail.php">
+							<div class="col-md-6">
+								<div class="form-single">
+									<input type="text" name="name" required id="name" placeholder="Your name" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-single two">
+									<input type="text" name="email" required id="email" placeholder="Email" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-textarea">
+									<textarea name="message" required id="message" placeholder="Your message here" rows="6" class="form-control"></textarea>
+								</div>
+								<div class="form-button">
+									<button class="contact-submit" type="submit">send message</button>
+									<p class="form-messege"></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Google Map Area End -->
+        <!-- Start footer area -->
+        <footer class="footer-area ptb-100 black-half-bg">
+			<div class="container">
+				<div class="row">
+					<!-- Fotter Single Area  -->
+					<div class="col-md-3 col-sm-4 col-xs-12 res-pb-xs-30">
+						<div class="footer-menu text-white">
+							<h6>Contact us</h6>
+							<div class="contact-details text-white">
+								<ul>
+									<li>
+										<a href="#"><i class="zmdi zmdi-pin"></i></a>
+										<p>House No 08, Road No 08,Din Bari, Dhaka, Bangladesh</p>
+									</li>
+									<li>
+										<a href="#"><i class="zmdi zmdi-email"></i></a>
+										<p>Username@gmail.com Damo@gmail.com</p>
+									</li>
+									<li>
+										<a href="#"><i class="zmdi zmdi-phone"></i></a>
+										<p>(+660 256 24857)(+660 256 24857)</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Fotter Single Area  -->
+					<!-- Fotter Single Area  -->
+					<div class="col-md-3 col-sm-4 col-xs-12 res-pb-xs-30">
+						<div class="footer-menu">
+							<h6>Recent post</h6>
+							<div class="recent-post">
+								<ul>
+									<li>
+										<img src="../../assets/images/post/1.png" alt="" />
+										<h5><a href="#">Ut enim</a> ad minim nostrud</h5>
+										<span>Oct 3, 2016 7 Comments</span>
+									</li>
+									<li>
+										<img src="../../assets/images/post/2.png" alt="" />
+										<h5>Ut enim ad <a href="#">minim</a> nostrud</h5>
+										<span>Oct 3, 2016 7 Comments</span>
+									</li>
+									<li>
+										<img src="../../assets/images/post/3.png" alt="" />
+										<h5><a href="#">Ut enim</a> ad minim nostrud</h5>
+										<span>Oct 3, 2016 7 Comments</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Fotter Single Area  -->
+					<!-- Fotter Single Area  -->
+					<div class="col-md-3 hidden-sm hidden-xs">
+						<div class="footer-menu pl-60">
+							<h6>QUICK LINKS</h6>
+							<div class="quick-link">
+								<ul>
+									<li>
+										<a href="#">Home</a>
+									</li>
+									<li>
+										<a href="#">About</a>
+									</li>
+									<li>
+										<a href="#">Team</a>
+									</li>
+									<li>
+										<a href="#">Services</a>
+									</li>
+									<li>
+										<a href="#">Portfolio</a>
+									</li>
+									<li>
+										<a href="#">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Fotter Single Area  -->
+					<!-- Fotter Single Area  -->
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="footer-menu">
+							<h6>NEWSLETTER</h6>
+							<div class="newsletter">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+								<form class="mc-form">
+									<div class="newsletter-form">
+										<input type="email" autocomplete="off" id="" placeholder="Enter your mail" class="form-control">
+										<button class="" type="submit">SEND MESSAEGE</button>
+										<!-- mailchimp-alerts Start -->
+										<div class="mailchimp-alerts text-centre">
+											<div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+											<div class="mailchimp-success"></div><!-- mailchimp-success end -->
+											<div class="mailchimp-error"></div><!-- mailchimp-error end -->
+										</div>
+										<!-- mailchimp-alerts end -->
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- Fotter Single Area  -->
+				</div>
+			</div>
+		</footer>
+        <!-- End footer area -->
+		<!-- Footer Bottom Area Start -->
+		<div class="footer-bottom ptb-20 black-bg">
+			<div class="container">
+				<div class="row">
+					<div class="footer-copyright text-center text-white">
+						<p>©<a href="https://freethemescloud.com/"> Free themes Cloud </a>2016. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Bottom Area End -->
+
+		
     </div>
-    <div class="clearfix"></div>
   </div>
 </template>
 <script>
-import Vue from 'vue'
-import '../../assets/js/imagesloaded.pkgd.min.js'
-
 export default {
   name: 'Home',
   data() {
     return {
-      pictureFilter: [],
-      current: 0,
-      slides: [
-       
-      ],
-      categoryArticles: []
     }
   },
   created() {
-    this.$http.get(`public/categories/wcode?type=articles`).then(res => {
-     this.categoryArticles = res.body
-    })
-    this.$http.get('public/pictures').then(res => {
-      this.pictures = res.body
-      this.pictureFilter = this.pictures
-      this.result = true
-    })
-    this.pictureFilter = this.pictures
-    this.result = true
+  
   },
   methods: {
-    filterImage (e) {
-      this.current = e.target.getAttribute('data-filter')
-      this.pictureFilter = []
-      if (e.target.getAttribute('data-filter') != '0') {
-        this.pictureFilter = this.pictures.filter( x => x.type == e.target.getAttribute('data-filter'))
-      } else {
-        this.pictureFilter = this.pictures
-      }
-      this.$nextTick(() => this.$redrawVueMasonry());
-    }
+   
   }
 }
 </script>
 <style>
-  .el-carousel__item h3 {
-    color: #475669;
-    font-size: 18px;
-    opacity: 0.75;
-    line-height: 300px;
-    margin: 0;
-  }
-  .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
-  }
-  .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
-  }
-  .cover-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+ 
 </style>

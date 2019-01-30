@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev:docker": "npm run dev",
-    "dev": "run(){ ENABLE_API=$1 webpack-dev-server --host 0.0.0.0 --inline --hot --progress --config build/webpack.dev.conf.js; }; run",
+    "dev": "run(){ ENABLE_API=$1 webpack-dev-server --host 0.0.0.0 --inline  --history-api-fallback --hot --progress --config build/webpack.dev.conf.js; }; run",
     "prod": "webpack-dev-server --host 0.0.0.0 --disableHostCheck true --inline --history-api-fallback --progress --config build/webpack.prod.conf.js",
     "start": "npm run dev",
     "serve": "node server.js",
