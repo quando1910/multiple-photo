@@ -17,7 +17,7 @@
                 <div class="col-lg-4 col-sm-6 padding-15" v-for="(item, index) of articles" :key="index">
                   <div class="blog-post">
                     <router-link :to="{name: 'ArticleDetail', params: { id: item._id}}">
-                      <img src="../../assets/img/post-1.jpg" alt="blog post">
+                      <img :src="item.thumbnail" alt="blog post">
                     </router-link>
                     <div class="blog-content">
                       <span class="date"><i class="fa fa-clock-o"></i> January 01.2019</span>

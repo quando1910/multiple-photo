@@ -11,7 +11,9 @@ import ArticleDetail from '../components/ComponentMain/article-detail.vue'
 import AlbumsDetail from '../components/ComponentMain/albums-detail.vue'
 import Albums from '../components/ComponentMain/albums-page.vue'
 import ArticlesPage from '../components/ComponentMain/articles-page.vue'
-
+import ProductsPage from '../components/ComponentMain/products.vue'
+import ArtPage from '../components/ComponentMain/art-page.vue'
+import Flycam from '../components/ComponentMain/flycam.vue'
 
 
 Vue.use(Router)
@@ -97,6 +99,21 @@ const router = new Router({
       path: '/about',
       component: About,
       name: 'About'
+    },
+    {
+      path: '/devices',
+      component: ProductsPage,
+      name: 'Products'
+    },
+    {
+      path: '/artpictures',
+      component: ArtPage,
+      name: 'ArtPictures'
+    },
+    {
+      path: '/flycam',
+      component: Flycam,
+      name: 'Flycam'
     }
   ]
 })

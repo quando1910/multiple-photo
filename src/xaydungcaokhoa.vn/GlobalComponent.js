@@ -1,6 +1,6 @@
-// import Header from './components/ComponentGlobal/header.vue'
-// import Footer from './components/ComponentGlobal/footer.vue'
-// import Articles from './components/ComponentGlobal/articles.vue'
+import Header from './components/ComponentGlobal/header.vue'
+import Footer from './components/ComponentGlobal/footer.vue'
+import TreeChart from './components/ComponentGlobal/tree-chart.vue'
 // import Sidebar from './components/ComponentGlobal/sidebar.vue'
 // import ArticleItem from './components/ComponentGlobal/articles-item.vue'
 // import Box from './components/ComponentGlobal/box.vue'
@@ -13,9 +13,9 @@
 
 const GlobalComponents = {
   install (Vue) {
-    // Vue.component('header-nav', Header)
-    // Vue.component('footer-nav', Footer)
-    // Vue.component('articles', Articles)
+    Vue.component('header-nav', Header)
+    Vue.component('footer-nav', Footer)
+    Vue.component('tree-chart', TreeChart)
     // Vue.component('sidebar', Sidebar)
     // Vue.component('box', Box)
     // Vue.component('large-box', LargeBox)

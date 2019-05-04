@@ -39,7 +39,7 @@ Vue.use(VueProgressiveImage)
 Vue.http.options.root = process.env.SERVER_IP
 
 if (process.env.NODE_ENV === 'production') {
-  Vue.prototype.agencyId = '5c4065c0c5a78610902e3008' /* production */
+  Vue.prototype.agencyId = '5c93e1d8d32fcd7d3841a842' /* production */
 } else {
   Vue.prototype.agencyId = '5c1f17433516b702f3a24da6' /* develop */
 }

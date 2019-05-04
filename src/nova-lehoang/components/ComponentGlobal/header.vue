@@ -40,9 +40,9 @@
             </li>
             <li><router-link :to="{name:'Service'}">Other Services<span class="slicknav_arrow">▼</span></router-link>
               <ul>
-                <li><a href="file:///Users/quando/Downloads/Stela/blog-single.html">Flycam</a></li>
-                <li><a href="file:///Users/quando/Downloads/Stela/blog-single.html">Hire Devices</a></li>
-                <li><a href="file:///Users/quando/Downloads/Stela/blog-single.html">Art Pictures</a></li>
+                <li><router-link :to="{name: 'Flycam'}">Flycam</router-link></li>
+                <li><router-link :to="{name: 'Products', query: {belongs: '5c5828a056b26d0176fbcda4'}}">Hire Devices</router-link></li>
+                <li><router-link :to="{name: 'ArtPictures', query: {belongs: '5c5828aa56b26d0176fbcda5'}}">Art Pictures</router-link></li>
               </ul>
             </li>
             <li><router-link :to="{name:'About'}">About Us</router-link></li>

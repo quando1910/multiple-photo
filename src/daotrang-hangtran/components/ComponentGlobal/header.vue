@@ -7,10 +7,10 @@
 		</div>
 		<div class="nav">
 			<ul class="nav fl edit-nav">
-				<li v-for="parent of routesPath" :key="parent">
-					<router-link :title="parent.mainTitle" :to="'/'">{{parent.mainTitle}}</router-link>
+				<li v-for="(parent, index) of routesPath" :key="index">
+					<router-link :title="parent.mainTitle" :to="parent.url">{{parent.mainTitle}}</router-link>
 					<ul v-if="parent.subTitle" class="subnav">
-            <li v-for="child of parent.subTitle" :key="child">
+            <li v-for="(child, index1) of parent.subTitle" :key="index1">
 							<router-link :title="child.title" :to="`${child.url}`">
                 &raquo; {{child.title}}
 							</router-link>
@@ -46,7 +46,7 @@
 </template>
 <script>
 export default {
-	data() {
+	data () {
 		return {
 			links: [],
 			state3: '',
@@ -57,6 +57,7 @@ export default {
 				},
 				{
 					mainTitle: 'Hộ niệm',
+					url: '/',
 					subTitle: [
 						{
 							title: 'cam kết hộ niệm',
@@ -86,6 +87,7 @@ export default {
 				},
 				{
 					mainTitle: 'thư viện',
+					url: '/',
 					subTitle: [
 						{
 							title: 'hình ảnh',
@@ -107,6 +109,7 @@ export default {
 				},
 				{
 					mainTitle: 'tham khảo',
+					url: '/',
 					subTitle: [
 						{
 							title: 'an vị phật',
@@ -124,18 +127,18 @@ export default {
 				},
 				{
 					mainTitle: 'giới thiệu pháp môn tịnh độ',
-					url: '/'
+					url: '/gioi-thieu-phap-mon-tinh-do'
 				},
 				{
 					mainTitle: 'hỏi đáp',
-					url: '/'
+					url: '/hoi-dap'
 				},
 				{
 					mainTitle: 'liên hệ',
-					url: '/'
-				},
+					url: '/lien-he'
+				}
 			]
-		};
+		}
 	},
 	methods: {
 		querySearch(queryString, cb) {

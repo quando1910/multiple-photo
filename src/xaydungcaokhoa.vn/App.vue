@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div id="container">
-      <!-- <header-nav/> -->
+    <div class="wrapper gray-bg">
+      <header-nav :toggle="$route.path === '/'"/>
       <router-view/>
       <!-- <sidebar/> -->
-      <!-- <footer-nav></footer-nav> -->
+      <footer-nav/>
     </div>
   </div>
 </template>

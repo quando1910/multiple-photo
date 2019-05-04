@@ -2,11 +2,11 @@
   <div class="news_column two_column fl" v-if="articles">
     <div class="news-content bordersilver white clearfix news-cat-two-column">
       <div class="header">
-        <a class="current" title="Tịnh Độ Đại Kinh Khoa Chú giảng lần thứ 4 năm 2014" href="/Tinh-Do-Dai-Kinh-Khoa-Chu-giang-lan-thu-4-nam-2014/">
+        <router-link class="current" tag="a" :to="{name: 'Articles', query: { type: articles._id.id, key: articles._id.key }}">
           <span>
             {{articles._id.key}}
           </span>
-        </a>
+        </router-link>
       </div>
       <div class="items border_b">
         <h3>

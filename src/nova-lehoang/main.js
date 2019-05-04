@@ -12,6 +12,9 @@ import VueI18n from 'vue-i18n'
 import i18n from './locales/config'
 import {VueMasonryPlugin} from 'vue-masonry'
 import ElementUI from 'element-ui'
+import Lightbox from 'vue-easy-lightbox'
+
+
 import 'element-ui/lib/theme-chalk/index.css'
 
 import './assets/css/scss/style.scss'
@@ -45,6 +48,7 @@ Vue.use(Vuex)
 Vue.use(router)
 Vue.use(VueResource)
 Vue.use(GlobalComponents)
+Vue.use(Lightbox)
 Vue.use(VueProgressiveImage)
 
 Vue.http.options.root = process.env.SERVER_IP

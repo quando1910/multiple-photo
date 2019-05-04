@@ -17,7 +17,7 @@
   animation: 1000ms linear 0s normal none 1 running fadeInLeft;
   color: #fff;
   display: inline-block;
-  font-family: raleway;
+  /* font-family: raleway; */
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -29,7 +29,7 @@
   border-radius: 5px;
   color: #fff;
   display: inline-block;
-  font-family: raleway;
+  /* font-family: raleway; */
   font-size: 72px;
   font-weight: 800;
   line-height: 78px;
@@ -53,14 +53,14 @@
   text-transform: uppercase;
 }
 .pos_description .title2 .txt b {
-  color: #14b1bb;
+  color: #269031;
 }
 .pos_description .pos-slideshow-readmore a {
   animation: 2000ms linear 0s normal none 1 running flipInX;
   background: #fff none repeat scroll 0 0;
   border-radius: 5px;
   color: #757575;
-  font-family: raleway;
+  /* font-family: raleway; */
   font-size: 12px;
   font-weight: 700;
   line-height: 30px;
@@ -72,7 +72,7 @@
   margin-top: 45px;
 }
 .pos_description .pos-slideshow-readmore a:hover{
-  background: #14b1bb;
+  background: #269031;
   color:#fff;
 }
 .slider-area .nivo-caption {
@@ -106,7 +106,7 @@
   width: 65px;
 }
 .slider-area .nivo-directionNav a:hover {
-  background-color: #14b1bb;
+  background-color: #269031;
   color: #fff;
 }
 .slider-area .nivo-directionNav a.nivo-nextNav {
@@ -146,7 +146,7 @@
   width: 45px;
 }
 .nivo-controlNav a.active::after {
-  color: #14b1bb;
+  color: #269031;
 }
 .nivo-controlNav a::after {
   color: #fff;
@@ -160,7 +160,7 @@
   font-size: 0;
 }
 .nivo-controlNav a.active::after {
-  color: #14b1bb;
+  color: #269031;
 }
 /*----------------------------------------*/
 /*  Slider Home -2 
@@ -186,7 +186,7 @@
   margin-top: 30px;
 }
 .slider-2 .pos_description .pos-slideshow-readmore a {
-  background: #14b1bb none repeat scroll 0 0;
+  background: #269031 none repeat scroll 0 0;
   color: #fff;
 }
 .slider-2 .pos_description .pos-slideshow-readmore a:hover{background:#45C0C8}
@@ -213,10 +213,10 @@
   width: 100%;
 }
 .cd-words-wrapper {
-  color:#14b1bb;
+  color:#269031;
 }
 .slide-text p {
-  font-family: raleway;
+  /* font-family: raleway; */
   font-size: 18px;
   letter-spacing: 3px;
   margin: 4px 0 30px;
@@ -226,7 +226,7 @@
   background: #fff none repeat scroll 0 0;
   border-radius: 5px;
   color: #757575;
-  font-family: raleway;
+  /* font-family: raleway; */
   font-size: 12px;
   font-weight: 700;
   line-height: 30px;
@@ -234,7 +234,7 @@
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
 }
-.button-box a.btn-one:hover{background:#14b1bb;color:#fff;}
+.button-box a.btn-one:hover{background:#269031;color:#fff;}
 .two .slide-text {
   top: 32%;
 }
@@ -242,7 +242,7 @@
   color: #000;
   margin: 25px 0 30px;
 }
-.two .button-box a.btn-one{background:#14b1bb;color:#fff}
+.two .button-box a.btn-one{background:#269031;color:#fff}
 .two .button-box a.btn-one:hover{background:#45c0c8;}
 .three .slide-text {
   left: 10%;

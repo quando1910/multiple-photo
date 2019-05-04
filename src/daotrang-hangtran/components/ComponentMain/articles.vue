@@ -46,9 +46,24 @@ export default {
       this.type = 9
       this.title = 'Hóa giải oan gia'
     }
+    if (this.$route.path === '/an-vi-phat') {
+      this.type = 10
+      this.title = 'An Vị Phật'
+    }
+    if (this.$route.path === '/cung-thi-thuc') {
+      this.type = 13
+      this.title = 'Cúng Thí Thực'
+    }
+    if (this.$route.path === '/nghi-le-cong-tu') {
+      this.type = 14
+      this.title = 'Nghi Lễ Cộng Tu'
+    }
+    if (this.$route.path === '/danh-sach-bai-viet') {
+      this.type = this.$route.query.type
+      this.title = this.$route.query.key
+    }
     this.$http.get(`public/articles?type=${this.type}`).then(res => {
       this.articles = res.body
-      console.log(this.articles)
     })
   },
 }

@@ -3,7 +3,7 @@
     <div id="message">
 			<p class="title-list uppercase"><b>{{title}}</b></p>
 		</div>
-    <video-list class="article-box"/>
+    <video-list :videos="videos" class="article-box"/>
   </div>
 </template>
 
@@ -11,15 +11,15 @@
 export default {
   data() {
     return {
-      articles: [],
+      videos: [],
       type: null,
       title: null
     }
   },
   created () {
     this.title = 'Video Hộ Niệm'
-    this.$http.get(`public/articles?type=${this.type}`).then(res => {
-      this.articles = res.body
+    this.$http.get(`public/videos`).then(res => {
+      this.videos = res.body
     })
   },
 }

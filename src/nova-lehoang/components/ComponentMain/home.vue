@@ -7,7 +7,7 @@
           <div class="cover-img-div" :style="{'background-image': `url(${item.source})`}" alt="img"></div>
         </el-carousel-item>
       </el-carousel>
-    </section><!-- /Hero Section -->
+    </section>
     <section class="portfolio-section padding">
         <div class="container">
             <div class="row">
@@ -18,19 +18,19 @@
                 <li :class="{'active' : current == 3}" data-filter="3" @click="filterImage">Events</li>
                 <li :class="{'active' : current == 4}" data-filter="4" @click="filterImage">Flycam</li>
                 <li :class="{'active' : current == 5}" data-filter="5" @click="filterImage">Videos</li>
-              </ul><!-- /.Work filter -->
+              </ul>
             </div>
             <div>
               <ul v-if="current != 5"  v-masonry transition-duration="1s" stagger="0.03s" item-selector=".news-item" class="row news-list">
                 <li v-if="post.type != 5" v-masonry-tile v-bind:key="index" v-for="(post, index) in pictureFilter" class="news-item" transition="staggered" stagger="100">
                   <div class="portfolio-box">
                     <router-link :to="{name: 'AlbumsDetail', params: { id: post.album_id}}">
-                      <img class="cover-img" :src="post.path | takeImage" alt="img">
+                      <img class="cover-img"  @click="showImg(index)" :src="post.path | takeImage" alt="img">
                       <div class="portfolio-inner">
-                          <div class="portfolio-content">
-                              <h3>Light Books</h3>
-                              <span>Branding</span>
-                          </div>
+                        <div class="portfolio-content">
+                          <h3>Light Books</h3>
+                          <span>Branding</span>
+                        </div>
                       </div>
                     </router-link>
                   </div>
@@ -46,7 +46,7 @@
               <a @click="directToAlbum" class="default-btn">Load More Projects</a>
             </div>
         </div>
-    </section><!-- /Portfolio Section -->
+    </section>
   </div>
 </template>
 <script>
@@ -60,6 +60,8 @@ export default {
     return {
       pictureFilter: [],
       current: 0,
+      index: 0,
+      visible: false,
       slides: [
         {source: require('../../assets/img/slide-1.jpg')},
         {source: require('../../assets/img/slide-2.jpg')},

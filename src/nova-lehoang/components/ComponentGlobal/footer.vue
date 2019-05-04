@@ -5,9 +5,9 @@
         <div class="row">
           <div class="col-md-4 col-sm-6 xs-padding">
             <div class="footer-widget">
-              <h2 class="text-white">Nova Production</h2>
+              <h2 class="text-white">NOVA PRODUCTION</h2>
               <div class="sep"></div>
-              <p class="mb-0">SẢN XUẤT PHIM DOANH NGHIỆP UY TÍN - CHUYÊN NGHIỆP - KINH NGHIỆM </p>
+              <p class="mb-0">Cảm ơn bạn đã đọc những dòng này, vì nó khẳng định chúng ta có chung một mục tiêu là muốn tạo ra CÁC QUẢNG CÁO PHIM ẢNH HIỆU QUẢ. Tuy nhiên, để biết chúng tôi có thực sự phù hợp với bạn hay không, hãy xem những điều chúng tôi làm tốt nhất nhé. </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 xs-padding">
@@ -28,7 +28,7 @@
           </div>
           <div class="col-md-4 col-sm-6 xs-padding">
             <div class="footer-widget">
-              <h2 class="text-white">Flycam 4K</h2>
+              <h2 class="text-white">FLYCAM 4K</h2>
               <div class="sep"></div>
               <iframe width="300" height="200" src="https://www.youtube.com/embed/ygqR5qMXN7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
