@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-4 col-sm-6 xs-padding">
             <div class="footer-widget">
-              <h2 class="text-white">Nova Production</h2>
+              <h2 class="text-darkgray">Nova Production</h2>
               <div class="sep"></div>
               <p class="mb-0">SẢN XUẤT PHIM DOANH NGHIỆP UY TÍN - CHUYÊN NGHIỆP - KINH NGHIỆM </p>
             </div>
@@ -28,7 +28,7 @@
           </div>
           <div class="col-md-4 col-sm-6 xs-padding">
             <div class="footer-widget">
-              <h2 class="text-white">Flycam 4K</h2>
+              <h2 class="text-darkgray">Flycam 4K</h2>
               <div class="sep"></div>
               <iframe width="300" height="200" src="https://www.youtube.com/embed/ygqR5qMXN7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>

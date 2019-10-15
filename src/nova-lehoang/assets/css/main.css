@@ -167,6 +167,9 @@ button{
 .text-white{
     color: #ffffff;
 }
+.text-darkgray{
+    color: darkgray;
+}
 .align-left{
     text-align: left;
 }
@@ -1208,7 +1211,7 @@ span.date{
    13.0 Footer Section
    ========================================================================== */
 .footer-widget-section{
-    background-color: #111;
+    background-color: #f3f3f3;
 }
 .footer-widget{}
 .footer-widget h2 {
@@ -1220,7 +1223,7 @@ span.date{
 .footer-widget .sep{
     width: 60px;
     height: 4px;
-    background: #e0e0e0 none repeat;
+    background: darkgray none repeat;
     margin-top: 15px;
     margin-bottom: 25px;
     -webkit-transition: all 0.4s;
@@ -1289,9 +1292,9 @@ span.date{
 
 /*Copyright Text*/
 .copyright-text{
-    background-color: #111;
-    padding: 25px 0;
-    border-top: 1px solid #222;
+    background-color: #f3f3f3;
+    padding: 15px 0;
+    border-top: 2px solid #7b7b7b;
 }
 .copyright-text p{
     margin: 0;
