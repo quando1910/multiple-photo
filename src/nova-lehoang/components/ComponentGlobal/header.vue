@@ -18,15 +18,26 @@
           <ul id="mainmenu" class="nav navbar-nav nav-menu">
             <li class="active"> <router-link :to="{name:'Home'}">Giới thiệu</router-link></li>
             <li><router-link :to="{name:'Wedding'}">Chụp Ảnh<span class="slicknav_arrow">▼</span></router-link>
+            <ul>
+                <li><router-link :to="{name: 'WeddingLocation'}">Ảnh Preewedding</router-link></li>
+                <li><router-link :to="{name: 'PreAlbums'}">Ảnh Phóng Sự Cưới</router-link></li>
+                <li><router-link :to="{name: 'JournalAlbums'}">Ảnh Cưới Nước Ngoài</router-link></li>
+                <li><router-link :to="{name: 'WeddingPost'}">Ảnh Gia Đình</router-link></li>
+                <li><router-link :to="{name: 'WeddingPost'}">Ảnh Beauty</router-link></li>
+                <li><router-link :to="{name: 'WeddingPost'}">Ảnh Sự Kiện</router-link></li>
+              </ul>
             </li>
             <li><router-link :to="{name:'Event'}">Quay phim<span class="slicknav_arrow">▼</span></router-link>
+              <ul>
+                <li><router-link :to="{name: 'WeddingLocation'}">TVC</router-link></li>
+                <li><router-link :to="{name: 'PreAlbums'}">SỰ KIỆN</router-link></li>
+                <li><router-link :to="{name: 'JournalAlbums'}">LIVESTRAM</router-link></li>
+              </ul>
             </li>
-            <li><router-link :to="{name:'Event'}">live stream<span class="slicknav_arrow">▼</span></router-link>
+            <li><router-link :to="{name:'Service'}">Flycam</router-link>
             </li>
-            <li><router-link :to="{name:'Service'}">Flycam<span class="slicknav_arrow">▼</span></router-link>
-            </li>
-            <li><router-link :to="{name:'About'}">Bao gia</router-link></li>
-            <li><router-link :to="{name:'About'}">tin tuc</router-link></li>
+            <li><router-link :to="{name:'About'}">báo giá</router-link></li>
+            <li><router-link :to="{name:'About'}">tin tức</router-link></li>
           </ul>
         </div>
       </div>
