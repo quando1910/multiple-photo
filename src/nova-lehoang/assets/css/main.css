@@ -1211,6 +1211,7 @@ span.date{
    13.0 Footer Section
    ========================================================================== */
 .footer-widget-section{
+    border-top: 1px solid #d4d4d4;
     background-color: #f3f3f3;
 }
 .footer-widget{}

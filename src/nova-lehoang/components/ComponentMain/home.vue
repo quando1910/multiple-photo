@@ -11,22 +11,10 @@
     <!-- /Hero Section -->
     <section class="portfolio-section padding">
       <div class="container">
-        <div class="categories">
-          <div class="title">
-            <span>prewedding</span>
-          </div>
-          <ul class="list" >
-            <li v-for="(pic, i) in pictureType1" :key="i" class="list-item">
-              <div class="img-size">
-                <img
-                  :src="pic.path | takeImage"
-                  :alt="pic.name"
-                />
-              </div>
-              <div class="item-name">abc</div>
-            </li>
-          </ul>
-        </div>
+        <CategoryPicture :title="'prewedding'" :categoryName="'noname'" :pictures="picturesType1" />
+        <CategoryPicture :title="'WEDDING JOURNALISM'" :categoryName="'noname'" :pictures="picturesType2" />
+        <CategoryVideo :title="'event'" :categoryName="'noname'" :pictures="picturesType3" />
+        <CategoryPicture :title="'flycam'" :categoryName="'noname'" :pictures="picturesType4" />
       </div>
     </section>
     <!-- /Portfolio Section -->
@@ -36,13 +24,23 @@
 import Vue from "vue";
 import * as types from "../../store/types";
 import "../../assets/js/imagesloaded.pkgd.min.js";
+import CategoryPicture from '../ComponentGlobal/categoryPicture.vue'
+import CategoryVideo from '../ComponentGlobal/CategoryVideo.vue'
 
 export default {
   name: "Home",
+  components: {
+    CategoryPicture,
+    CategoryVideo
+  },
   data() {
     return {
       pictureFilter: [],
-      pictureType1: [],
+      pictures: [],
+      picturesType1: [],
+      picturesType2: [],
+      picturesType3: [],
+      picturesType4: [],
       current: 0,
       slides: [
         { source: require("../../assets/img/slide-1.jpg") },
@@ -59,7 +57,20 @@ export default {
     const payload = { agencyId: this.agencyId, type: 1 };
     this.$http.get("public/pictures").then(res => {
       this.pictures = res.body;
-      this.pictureType1 = this.pictures.filter((pic, i) => pic.type === 1 && i < 4);
+      this.picturesType1 = this.filterType(1)
+      this.picturesType2 = this.filterType(2)
+      this.picturesType3 = [
+        {
+          src: 'shDBXVMlqVk',
+        },
+        {
+          src: 'shDBXVMlqVk',
+        },
+        {
+          src: 'shDBXVMlqVk',
+        }
+      ]
+      this.picturesType4 = this.filterType(4)
       this.pictureFilter = this.pictures;
       this.result = true;
     });
@@ -67,6 +78,17 @@ export default {
     this.result = true;
   },
   methods: {
+    filterType(id){
+      let temp = 0;
+      let arr = [];
+      this.pictures.map(pic => {
+        if(temp < 3 && pic.type === id){
+          temp++;
+          arr.push(pic);
+        }
+      })
+      return arr;
+    },
     filterImage(e) {
       this.current = e.target.getAttribute("data-filter");
       this.pictureFilter = [];
@@ -132,48 +154,48 @@ export default {
 }
 .title {
   padding: 10px;
-  background-color: #a0a0a0;
+  background-color: #f3f3f3;
   margin-bottom: 10px;
   font-size: 1.25rem;
   font-weight: 500;
   text-transform: capitalize;
-  color: white;
-}
-.categories .list {
+  color: #777777;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 5px solid #777777;
 }
-
-.categories .list-item {
+.title button, .title button:hover {
+  background-color: #f3f3f3;
+  border: 0;
+  color: #777777;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.title button:active {
+  background-color: #7a7a7a;
+}
+.category .list-item {
   position: relative;
-  width: calc(25% - 10px);
-  height: 170px;
-}
-.categories .list-item:hover .item-name{
-  opacity: 1;
-  transition: opacity .6s;
+  height: 200px;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 5px;
 }
 
-.categories .item-name {
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid white;
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+@media (max-width: 768px) {
+  .category .list-item { 
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
-.categories .img-size {
-  width: 100%;
-  height: 100%;
+@media (max-width: 576px) {
+  .category .list-item { 
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 </style>
