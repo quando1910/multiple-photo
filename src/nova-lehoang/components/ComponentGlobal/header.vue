@@ -16,36 +16,28 @@
         </div>
         <div class="col-md-8  text-right">
           <ul id="mainmenu" class="nav navbar-nav nav-menu">
-            <li class="active"> <router-link :to="{name:'Home'}">Home</router-link></li>
-            <li><router-link :to="{name:'Wedding'}">Wedding<span class="slicknav_arrow">▼</span></a></router-link>
-              <ul>
-                <li><router-link :to="{name: 'WeddingLocation'}">Locations</router-link></li>
-                <li><router-link :to="{name: 'PreAlbums'}">Prewedding Album</router-link></li>
-                <li><router-link :to="{name: 'JournalAlbums'}">Journalism Album</router-link></li>
-                <li><router-link :to="{name: 'WeddingPost'}">Wedding Posts</router-link></li>
+            <li class="active"> <router-link :to="{name:'Home'}">Giới thiệu</router-link></li>
+            <li><router-link :to="{name:'Wedding'}">Chụp Ảnh<span class="slicknav_arrow">▼</span></router-link>
+            <ul>
+                <li><router-link :to="{name: 'WeddingLocation'}">Ảnh Preewedding</router-link></li>
+                <li><router-link :to="{name: 'PreAlbums'}">Ảnh Phóng Sự Cưới</router-link></li>
+                <li><router-link :to="{name: 'JournalAlbums'}">Ảnh Cưới Nước Ngoài</router-link></li>
+                <li><router-link :to="{name: 'WeddingPost'}">Ảnh Gia Đình</router-link></li>
+                <li><router-link :to="{name: 'WeddingPost'}">Ảnh Beauty</router-link></li>
+                <li><router-link :to="{name: 'WeddingPost'}">Ảnh Sự Kiện</router-link></li>
               </ul>
             </li>
-            <li><router-link :to="{name:'Event'}">Event<span class="slicknav_arrow">▼</span></router-link>
+            <li><router-link :to="{name:'Event'}">Quay phim<span class="slicknav_arrow">▼</span></router-link>
               <ul>
-                <li><router-link :to="{name: 'Event'}">Event Services</router-link></li>
-                <li><router-link :to="{name: 'EventAlbums'}">Event Album</router-link></li>
-                <li><router-link :to="{name: 'BehindScenes'}">Behind the Scenes</router-link></li>
+                <li><router-link :to="{name: 'WeddingLocation'}">TVC</router-link></li>
+                <li><router-link :to="{name: 'PreAlbums'}">SỰ KIỆN</router-link></li>
+                <li><router-link :to="{name: 'JournalAlbums'}">LIVESTRAM</router-link></li>
               </ul>
             </li>
-            <li><router-link :to="{name:'Event'}">TVC<span class="slicknav_arrow">▼</span></router-link>
-              <ul>
-                <li><router-link :to="{name: 'TVC'}">TVC Services</router-link></li>
-                <li><router-link :to="{name: 'WeddingAlbums'}">Products</router-link></li>
-              </ul>
+            <li><router-link :to="{name:'Service'}">Flycam</router-link>
             </li>
-            <li><router-link :to="{name:'Service'}">Other Services<span class="slicknav_arrow">▼</span></router-link>
-              <ul>
-                <li><a href="file:///Users/quando/Downloads/Stela/blog-single.html">Flycam</a></li>
-                <li><a href="file:///Users/quando/Downloads/Stela/blog-single.html">Hire Devices</a></li>
-                <li><a href="file:///Users/quando/Downloads/Stela/blog-single.html">Art Pictures</a></li>
-              </ul>
-            </li>
-            <li><router-link :to="{name:'About'}">About Us</router-link></li>
+            <li><router-link :to="{name:'About'}">báo giá</router-link></li>
+            <li><router-link :to="{name:'About'}">tin tức</router-link></li>
           </ul>
         </div>
       </div>

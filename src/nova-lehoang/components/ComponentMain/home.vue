@@ -7,117 +7,127 @@
           <div class="cover-img-div" :style="{'background-image': `url(${item.source})`}" alt="img"></div>
         </el-carousel-item>
       </el-carousel>
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
     <section class="portfolio-section padding">
-        <div class="container">
-            <div class="row">
-              <ul class="portfolio-filter text-center mb-30">
-                <li :class="{'active' : current == 0}" data-filter="0" @click="filterImage">All</li>
-                <li :class="{'active' : current == 1}" data-filter="1" @click="filterImage">Prewedding</li>
-                <li :class="{'active' : current == 2}" data-filter="2" @click="filterImage">Wedding Journalism</li>
-                <li :class="{'active' : current == 3}" data-filter="3" @click="filterImage">Events</li>
-                <li :class="{'active' : current == 4}" data-filter="4" @click="filterImage">Flycam</li>
-                <li :class="{'active' : current == 5}" data-filter="5" @click="filterImage">Videos</li>
-              </ul><!-- /.Work filter -->
-            </div>
-            <div>
-              <ul v-if="current != 5"  v-masonry transition-duration="1s" stagger="0.03s" item-selector=".news-item" class="row news-list">
-                <li v-if="post.type != 5" v-masonry-tile v-bind:key="index" v-for="(post, index) in pictureFilter" class="news-item" transition="staggered" stagger="100">
-                  <div class="portfolio-box">
-                    <router-link :to="{name: 'AlbumsDetail', params: { id: post.album_id}}">
-                      <img class="cover-img" :src="post.path | takeImage" alt="img">
-                      <div class="portfolio-inner">
-                          <div class="portfolio-content">
-                              <h3>Light Books</h3>
-                              <span>Branding</span>
-                          </div>
-                      </div>
-                    </router-link>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <ul v-if="current == 5" class="row">
-              <li class="col-md-4" v-for="(post, index) in pictureFilter" v-bind:key="index">
-                <iframe width="100%" height="200px" :src="post.link" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </li>
-            </ul>
-            <div class="load-more-btn text-center mt-30">
-              <a @click="directToAlbum" class="default-btn">Load More Projects</a>
-            </div>
-        </div>
-    </section><!-- /Portfolio Section -->
+      <div class="container">
+        <CategoryPicture :title="'prewedding'" :categoryName="'noname'" :pictures="picturesType1" />
+        <CategoryPicture :title="'WEDDING JOURNALISM'" :categoryName="'noname'" :pictures="picturesType2" />
+        <CategoryVideo :title="'event'" :categoryName="'noname'" :pictures="picturesType3" />
+        <CategoryPicture :title="'flycam'" :categoryName="'noname'" :pictures="picturesType4" />
+      </div>
+    </section>
+    <!-- /Portfolio Section -->
   </div>
 </template>
 <script>
-import Vue from 'vue'
-import * as types from '../../store/types'
-import '../../assets/js/imagesloaded.pkgd.min.js'
+import Vue from "vue";
+import * as types from "../../store/types";
+import "../../assets/js/imagesloaded.pkgd.min.js";
+import CategoryPicture from '../ComponentGlobal/categoryPicture.vue'
+import CategoryVideo from '../ComponentGlobal/CategoryVideo.vue'
 
 export default {
-  name: 'Home',
+  name: "Home",
+  components: {
+    CategoryPicture,
+    CategoryVideo
+  },
   data() {
     return {
       pictureFilter: [],
+      pictures: [],
+      picturesType1: [],
+      picturesType2: [],
+      picturesType3: [],
+      picturesType4: [],
       current: 0,
       slides: [
-        {source: require('../../assets/img/slide-1.jpg')},
-        {source: require('../../assets/img/slide-2.jpg')},
-        {source: require('../../assets/img/slide-3.jpg')},
-        {source: require('../../assets/img/slide-4.jpg')},
-        {source: require('../../assets/img/slide-5.jpg')},
-        {source: require('../../assets/img/slide-6.jpg')},
-        {source: require('../../assets/img/slide-7.jpg')}
+        { source: require("../../assets/img/slide-1.jpg") },
+        { source: require("../../assets/img/slide-2.jpg") },
+        { source: require("../../assets/img/slide-3.jpg") },
+        { source: require("../../assets/img/slide-4.jpg") },
+        { source: require("../../assets/img/slide-5.jpg") },
+        { source: require("../../assets/img/slide-6.jpg") },
+        { source: require("../../assets/img/slide-7.jpg") }
       ]
-    }
+    };
   },
   created() {
-    const payload = {agencyId: this.agencyId, type : 1}
-    this.$http.get('public/pictures').then(res => {
-      this.pictures = res.body
-      this.pictureFilter = this.pictures
-      this.result = true
-    })
-    this.pictureFilter = this.pictures
-    this.result = true
+    const payload = { agencyId: this.agencyId, type: 1 };
+    this.$http.get("public/pictures").then(res => {
+      this.pictures = res.body;
+      this.picturesType1 = this.filterType(1)
+      this.picturesType2 = this.filterType(2)
+      this.picturesType3 = [
+        {
+          src: 'shDBXVMlqVk',
+        },
+        {
+          src: 'shDBXVMlqVk',
+        },
+        {
+          src: 'shDBXVMlqVk',
+        }
+      ]
+      this.picturesType4 = this.filterType(4)
+      this.pictureFilter = this.pictures;
+      this.result = true;
+    });
+    this.pictureFilter = this.pictures;
+    this.result = true;
   },
   methods: {
-    filterImage (e) {
-      this.current = e.target.getAttribute('data-filter')
-      this.pictureFilter = []
-      if (e.target.getAttribute('data-filter') != '0') {
-        this.pictureFilter = this.pictures.filter( x => x.type == e.target.getAttribute('data-filter'))
+    filterType(id){
+      let temp = 0;
+      let arr = [];
+      this.pictures.map(pic => {
+        if(temp < 3 && pic.type === id){
+          temp++;
+          arr.push(pic);
+        }
+      })
+      return arr;
+    },
+    filterImage(e) {
+      this.current = e.target.getAttribute("data-filter");
+      this.pictureFilter = [];
+      if (e.target.getAttribute("data-filter") != "0") {
+        this.pictureFilter = this.pictures.filter(
+          x => x.type == e.target.getAttribute("data-filter")
+        );
       } else {
-        this.pictureFilter = this.pictures
+        this.pictureFilter = this.pictures;
       }
       this.$nextTick(() => this.$redrawVueMasonry());
     },
-    directToAlbum () {
-      if (this.current == 1 || this.current == 0 ) {
-        this.$router.push('/prewedding/albums')
+    directToAlbum() {
+      if (this.current == 1 || this.current == 0) {
+        this.$router.push("/prewedding/albums");
       }
-      if (this.current == 2 ) {
-        this.$router.push('/journal/albums')
+      if (this.current == 2) {
+        this.$router.push("/journal/albums");
       }
-      if (this.current == 3 ) {
-        this.$router.push('/event/albums')
+      if (this.current == 3) {
+        this.$router.push("/event/albums");
       }
-      if (this.current == 4 ) {
-        this.$router.push('/event/albums')
+      if (this.current == 4) {
+        this.$router.push("/event/albums");
       }
     }
   }
-}
+};
 </script>
 <style>
 .news-item {
-  width: calc(100%/3);
+  width: calc(100% / 3);
   padding: 0 0.4rem;
   margin-bottom: 0.8rem;
   display: inline-block;
   vertical-align: top;
 }
-.cover-img, .news-list{
+.cover-img,
+.news-list {
   width: 100%;
 }
 .el-carousel__container {
@@ -128,17 +138,64 @@ export default {
   background-size: cover;
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat; 
-  background-position: center; 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .staggered-transition {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   overflow: hidden;
   margin: 0;
   height: 20px;
 }
-.staggered-enter, .staggered-leave {
+.staggered-enter,
+.staggered-leave {
   opacity: 0;
   height: 0;
+}
+.title {
+  padding: 10px;
+  background-color: #f3f3f3;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+  border-top: 5px solid #777777;
+}
+.title button, .title button:hover {
+  background-color: #f3f3f3;
+  border: 0;
+  color: #777777;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.title button:active {
+  background-color: #7a7a7a;
+}
+.category .list-item {
+  position: relative;
+  height: 200px;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .category .list-item { 
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .category .list-item { 
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 </style>
